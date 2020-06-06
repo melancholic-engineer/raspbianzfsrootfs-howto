@@ -24,9 +24,12 @@ You might yet find them useful.
 A RPI4 4GB with Rasbian Buster (4.19.118-v7l+)
 
 ## Quick benchmark
-* RPI4 4GB with Rasbian Buster (4.19.118-v7l+)
-* Intel 660P 1TB over USB3
-* Using "[agnostics][9]"
+RPI4 4GB with Rasbian Buster (4.19.118-v7l+)
+
+Intel 660P 1TB over USB3
+
+Using "[agnostics][9]"
+
 
     root@???:/usr/share/agnostics# sh sdtest.sh
     Run 1
