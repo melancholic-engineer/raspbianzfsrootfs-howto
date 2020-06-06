@@ -71,14 +71,19 @@ The next step will take a while.
 * Note01: The original [guide][1] had an additional "--no-lintian" flag. The debuild I had does not recongnise the flag. I left off the flag with no ill effects. YMMV.
 * Note02: debuild might fail and warn you of additional packages to install. Just follow instructions and try again.
 
+
 ## 07. Install Kernel Headers
-In case you don't have those.
+
+In case you don't have those:
+
     sudo apt-get install raspberrypi-kernel-headers
 
+    
 ## 08.1 Get another Good Coffee
 DKMS portions of the next step will take a while, even on RPI4
 
 ## 08.2 Install the deb lackages
+
     sudo dpkg -i libnvpair1linux_0*.deb libuutil1linux_0*.deb libzfs2linux_0*.deb libzfslinux-dev_0*.deb libzpool2linux_0*.deb spl_0*.deb spl-dkms_0*.deb zfs-dkms_0*.deb zfs-initramfs_0*.deb zfsutils-linux_0*.deb zfs-zed_0*.deb
 
 ## 09. Reboot
