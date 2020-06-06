@@ -23,6 +23,22 @@ You might yet find them useful.
 ## Where has it been tested on
 A RPI4 4GB with Rasbian Buster (4.19.118-v7l+)
 
+## Quick benchmark
+RPI4 4GB with Rasbian Buster (4.19.118-v7l+)
+Intel 660P 1TB over USB3
+Using "[agnostics][9]"
+
+    root@???:/usr/share/agnostics# sh sdtest.sh
+    Run 1
+    prepare-file;0;0;99902;195
+    seq-write;0;0;96376;188
+    rand-4k-write;0;0;3987;996
+    rand-4k-read;12328;3082;0;0
+    Sequential write speed 96376 KB/sec (target 10000) - PASS
+    Random write speed 996 IOPS (target 500) - PASS
+    Random read speed 3082 IOPS (target 1500) - PASS
+
+
 ## 01. Setting up raspbian on the sd card and boot
 You can refer to [raspberrypi.org](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) if needed.
 
@@ -235,3 +251,4 @@ Reboot again to boot into the new rootfs
 [6]: http://raspbian.raspberrypi.org/raspbian/pool/contrib/z/zfs-linux/zfs-linux_0.8.4-1.dsc
 [7]: https://linux.die.net/man/8/sgdisk
 [8]: https://wiki.archlinux.org/index.php/Rsync#File_system_cloning
+[9]: https://www.raspberrypi.org/blog/sd-card-speed-test/
