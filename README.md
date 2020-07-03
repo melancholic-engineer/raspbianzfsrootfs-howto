@@ -1,3 +1,5 @@
+<meta name="google-site-verification" content="xp_51b7i3C8TZeLqg4rkmOiFlsmxnz0Oi5a1FE2tvYc" />
+
 # Raspbian (Buster) ZFS rootfs
 A walkthrough for setting up a ZFS (>= 0.8.4) rootfs for Raspberry Pi using Raspbian (Buster)
 
